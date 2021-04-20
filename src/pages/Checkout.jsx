@@ -1,77 +1,13 @@
+import Header from "../components/Header/Header";
+import { Link } from "react-router-dom";
+
 const Checkout = () => {
     return (
         <div>
-            <header className="small-header container row">
-                <div className="left row">
-                    <a href="#" className="chat">Chat with us</a>
-                    <p className="info">+420 336 775 664</p>
-                    <p className="info">info@freshnesecom.com</p>
-                </div>
-                <div className="right">
-                    <a href="blog.html" className="menu-item">Blog</a>
-                    <a href="#" className="menu-item">About Us</a>
-                    <a href="#" className="menu-item">Careers</a>
-                </div>
-            </header>
-            <header className="big-header container row">
-                <div className="logo-container">
-                    <a href="index.html"><img src="img/logo.svg" alt="logo" /></a>
-                </div>
-                <div className="search row">
-                    <div className="select row">
-                        <p className="select-category">All categories</p>
-                        <img src="icons/arrow-down-more.svg" alt="select" />
-                    </div>
-                    <input type="text" className="search-input" placeholder="Search Products, categories ..." />
-                    <img src="icons/search-icon.svg" alt="search icon" className="search-icon" draggable="false" />
-                </div>
-                <div className="user-panel row">
-                    <div className="user-icon">
-                        <img src="icons/user-icon.svg" alt="user icon" />
-                    </div>
-                    <div className="cart">
-                        <div className="cart-value">4</div>
-                        <img src="icons/cart-icon.svg" alt="cart" />
-                    </div>
-                </div>
-            </header>
-            <nav className="main-nav container row">
-                <div className="menu-item row">
-                    <a href="bakery.html">Bakery</a>
-                    <img src="icons/arrow-small-down.svg" alt="arrow" />
-                </div>
-                <div className="menu-item row">
-                    <a href="fruit-and-vegetables.html">Fruit and vegetables</a>
-                    <img src="icons/arrow-small-down.svg" alt="arrow" width={12} height={12} />
-                </div>
-                <div className="menu-item row">
-                    <a href="meat-and-fish.html">Meat and fish</a>
-                    <img src="icons/arrow-small-down.svg" alt="arrow" width={12} height={12} />
-                </div>
-                <div className="menu-item row">
-                    <a href="drinks.html">Drinks</a>
-                    <img src="icons/arrow-small-down.svg" alt="arrow" width={12} height={12} />
-                </div>
-                <div className="menu-item row">
-                    <a href="kitchen.html">Kitchen</a>
-                    <img src="icons/arrow-small-down.svg" alt="arrow" width={12} height={12} />
-                </div>
-                <div className="menu-item row">
-                    <a href="special-nutrition.html">Special nutrition</a>
-                    <img src="icons/arrow-small-down.svg" alt="arrow" width={12} height={12} />
-                </div>
-                <div className="menu-item row">
-                    <a href="baby.html">Baby</a>
-                    <img src="icons/arrow-small-down.svg" alt="arrow" width={12} height={12} />
-                </div>
-                <div className="menu-item row">
-                    <a href="pharmacy.html">Pharmacy</a>
-                    <img src="icons/arrow-small-down.svg" alt="arrow" width={12} height={12} />
-                </div>
-            </nav>
+            <Header />
             <main>
                 <section className="path-section container row">
-                    <a href="index.html" className="home">Homepage</a>
+                    <Link to="/home" className="home">Homepage</Link>
                     <p className="slash">/</p>
                     <p className="sel-cat">Checkout page</p>
                 </section>

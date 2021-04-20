@@ -1964,7 +1964,7 @@ footer .copyright {
   padding: 48px 45px;
 }
 
-.top-blog .posts-row .big-blog-card.card-2 {
+.top-blog .posts-row .big-blog-card {
   margin-right: 0;
   background: url("img/big-blog-img-2.png") no-repeat center;
   background-size: cover;
